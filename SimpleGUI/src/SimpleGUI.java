@@ -7,7 +7,7 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.EmptyBorder;
-
+import com.toedter.calendar.*;
 	
 
 		public class SimpleGUI extends JFrame {
@@ -25,9 +25,12 @@ import javax.swing.border.EmptyBorder;
 			    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			    getContentPane().setLayout(null);
 			 
+			    JCalendar cal = new JCalendar();
+			    
+			    
 			    
 			    JPanel panel = new JPanel();
-			    panel.setBounds(52, 17, 164, 27);
+			    panel.setBounds(166, 17, 164, 27);
 			    getContentPane().add(panel);
 			    
 			    JLabel lblNewLabel = new JLabel("LOGIN");
@@ -35,7 +38,7 @@ import javax.swing.border.EmptyBorder;
 			    panel.add(lblNewLabel);
 			    
 			    JPanel panel_1 = new JPanel();
-			    panel_1.setBounds(133, 71, 164, 32);
+			    panel_1.setBounds(241, 71, 164, 32);
 			    getContentPane().add(panel_1);
 			    
 			    textField = new JTextField();
@@ -44,30 +47,25 @@ import javax.swing.border.EmptyBorder;
 			    panel_1.add(textField);
 			    textField.setColumns(10);
 			    
-			    JPanel panel_2 = new JPanel();
-			    panel_2.setBounds(21, 71, 107, 32);
-			    getContentPane().add(panel_2);
-			    
-			    JLabel lblNewLabel_1 = new JLabel("Username:");
-			    lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
-			    panel_2.add(lblNewLabel_1);
-			    
-			    JPanel panel_3 = new JPanel();
-			    panel_3.setBounds(21, 115, 107, 32);
-			    getContentPane().add(panel_3);
-			    
-			    JLabel lblNewLabel_2 = new JLabel("Password:");
-			    panel_3.add(lblNewLabel_2);
-			    
 			    passwordField = new JPasswordField();
 			    passwordField.setBackground(new Color(192, 192, 192));
-			    passwordField.setBounds(151, 122, 128, 19);
+			    passwordField.setBounds(260, 130, 128, 19);
 			    getContentPane().add(passwordField);
 			    
-			    JButton btnNewButton = new JButton("\u2764");
+			    JButton btnNewButton = new JButton("􀣋");
+			    btnNewButton.setHorizontalAlignment(SwingConstants.LEFT);
 			    btnNewButton.setBackground(new Color(220, 220, 220));
-			    btnNewButton.setBounds(346, 17, 42, 27);
+			    btnNewButton.setBounds(414, 17, 59, 27);
 			    getContentPane().add(btnNewButton);
+			    
+			    JLabel lblNewLabel_1 = new JLabel("􀲏 Username:");
+			    lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
+			    lblNewLabel_1.setBounds(126, 81, 103, 16);
+			    getContentPane().add(lblNewLabel_1);
+			    
+			    JLabel lblNewLabel_2 = new JLabel("􀎡 Password:");
+			    lblNewLabel_2.setBounds(126, 132, 103, 16);
+			    getContentPane().add(lblNewLabel_2);
 			
 			   /* JFrame frame = new JFrame();
 			    frame.setTitle("LOGIN PAGE");
