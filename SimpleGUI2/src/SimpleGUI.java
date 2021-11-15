@@ -30,6 +30,7 @@ import com.jgoodies.forms.layout.RowSpec;
 			    SpringLayout springLayout = new SpringLayout();
 			    getContentPane().setLayout(springLayout);
 			    
+			    
 			    JButton btnNewButton = new JButton("House 1");
 			    springLayout.putConstraint(SpringLayout.NORTH, btnNewButton, 66, SpringLayout.NORTH, getContentPane());
 			    springLayout.putConstraint(SpringLayout.WEST, btnNewButton, 16, SpringLayout.WEST, getContentPane());
@@ -111,15 +112,13 @@ import com.jgoodies.forms.layout.RowSpec;
 			    lblNewLabel.setFont(new Font(".AppleSystemUIFont", Font.PLAIN, 30));
 			    getContentPane().add(lblNewLabel);
 			    
-			    JButton btnNewButton_1 = new JButton("\u2764");
+			    JButton btnNewButton_1 = new JButton("􀣋");
 			    springLayout.putConstraint(SpringLayout.NORTH, btnNewButton_1, 10, SpringLayout.NORTH, getContentPane());
-			    springLayout.putConstraint(SpringLayout.WEST, btnNewButton_1, -67, SpringLayout.EAST, getContentPane());
+			    springLayout.putConstraint(SpringLayout.WEST, btnNewButton_1, 95, SpringLayout.EAST, lblNewLabel);
 			    springLayout.putConstraint(SpringLayout.SOUTH, btnNewButton_1, 15, SpringLayout.NORTH, lblNewLabel);
-			    springLayout.putConstraint(SpringLayout.EAST, btnNewButton_1, -24, SpringLayout.EAST, getContentPane());
+			    springLayout.putConstraint(SpringLayout.EAST, btnNewButton_1, -166, SpringLayout.EAST, getContentPane());
 			    getContentPane().add(btnNewButton_1);
 			    
-			  
-			 
 			}
 
 			public static void main(String[] args) {
